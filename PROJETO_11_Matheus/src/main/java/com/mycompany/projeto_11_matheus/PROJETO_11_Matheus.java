@@ -72,7 +72,7 @@ public class PROJETO_11_Matheus {
 
         double tempoMedioProcessamento = totalPedidos > 0 ? (double)tempoTotalProcessamento / totalPedidos : 0;
 
-        System.out.println("\nRelatório Final:");
+        System.out.println("Relatório Final:");
         System.out.println("Total de pedidos processados: " + totalPedidos);
         System.out.println("Tempo total de processamento: " + tempoTotalProcessamento + " minuto(s)");
         System.out.println("Tempo médio de processamento por pedido: " + tempoMedioProcessamento + " minuto(s)");
