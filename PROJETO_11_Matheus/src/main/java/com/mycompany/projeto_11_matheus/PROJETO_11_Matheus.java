@@ -51,7 +51,7 @@ public class PROJETO_11_Matheus {
 
             int tempoRestante = i * 2;
             while (tempoRestante > 0) {
-                System.out.println("Processando o pedido " + i + " com tempo restante de " + tempoRestante + " minuto(s).");
+                System.out.println("Processando o pedido " + i + " com tempo restante de " + tempoRestante + " minutos.");
 
                 try {
                     Thread.sleep(1000);
@@ -63,7 +63,7 @@ public class PROJETO_11_Matheus {
                 tempoDecorrido++;
 
                 if (tempoDecorrido % 60 == 0 && tempoDecorrido > 0) {
-                    System.out.println("Tempo total decorrido: " + (tempoDecorrido / 60) + " minuto(s).");
+                    System.out.println("Tempo total decorrido: " + (tempoDecorrido / 60) + " minutos.");
                 }
             }
 
@@ -72,11 +72,11 @@ public class PROJETO_11_Matheus {
 
         double tempoMedioProcessamento = totalPedidos > 0 ? (double)tempoTotalProcessamento / totalPedidos : 0;
 
-        System.out.println("Relatório Final:");
+        System.out.println("\nRelatório Final:");
         System.out.println("Total de pedidos processados: " + totalPedidos);
-        System.out.println("Tempo total de processamento: " + tempoTotalProcessamento + " minuto(s)");
-        System.out.println("Tempo médio de processamento por pedido: " + tempoMedioProcessamento + " minuto(s)");
+        System.out.println("Tempo total de processamento: " + tempoTotalProcessamento + " minutos");
+        System.out.println("Tempo médio de processamento por pedido: " + tempoMedioProcessamento + " minutos");
         System.out.println("Pedido com o maior número de itens: " + maxItens + " itens");
-        System.out.println("Tempo de processamento do pedido com mais itens: " + tempoMaxPedido + " minuto(s)");
+        System.out.println("Tempo de processamento do pedido com mais itens: " + tempoMaxPedido + " minutos");
     }
 }
