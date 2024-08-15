@@ -18,10 +18,10 @@ public class PROJETO_7_Matheus {
         System.out.println("BEM-VINDO");
         
         System.out.println("QUANTOS KG(QUILOGRAMAS) VOCÊ PESA?");
-            float peso = ler.nextFloat();
+        float peso = ler.nextFloat();
             
         System.out.println("QUAL É SUA ALTURA(EM METROS)?");
-            float altura = ler.nextFloat();
+        float altura = ler.nextFloat();
         
         float imc = peso/(altura*altura);
         
