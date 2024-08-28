@@ -15,7 +15,6 @@ public class PROJETO_12 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         String[] pista_1 = new String[5];
-        String[] pista_2 = new String[5];
         
         System.out.println("Escreva o Nome do Jogador 1:");
         String jogador_1 = ler.nextLine();
@@ -27,7 +26,7 @@ public class PROJETO_12 {
         System.out.println("Escreva o Nome do Jogador 2:");
         String jogador_2 = ler.nextLine();
         
-        System.out.println("Sua vez "+jogador_2+":");
+        System.out.println("Sua vez "+jogador_2+"!");
         System.out.println("Tente adivinhar qual filme o "+jogador_1+" escolheu");
         
         int i = 0;
@@ -61,6 +60,5 @@ public class PROJETO_12 {
             System.out.println("Pista "+(i+1)+":");
             pista_1[i] = ler.nextLine();
         }
-        
     }
 }
