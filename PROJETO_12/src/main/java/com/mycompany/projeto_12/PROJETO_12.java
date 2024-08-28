@@ -27,33 +27,40 @@ public class PROJETO_12 {
         System.out.println("Escreva o Nome do Jogador 2:");
         String jogador_2 = ler.nextLine();
         
-        System.out.println("Escreva o Nome do Seu Filme:");
-        String filme_2 = ler.nextLine();
-        Jogador_2(pista_2);
+        System.out.println("Sua vez "+jogador_2+":");
+        System.out.println("Tente adivinhar qual filme o "+jogador_1+" escolheu");
         
-        for(int i = 0; i < 5; i++){
-            System.out.println("Sua vez Jogador 1:");
-            System.out.println("Tente adivinhar qual filme o jogardor 2 escolheu");
-            System.out.println("Pista"+(i+1)+" "+pista_1[i]);
+        int i = 0;
+        int acerto = 0;
+        
+        while(acerto == 0){
+            
+            if(i < 5){
+                System.out.println("Pista "+(i+1)+": "+pista_1[i]);
+            }else{
+                if(i == 5){
+                   System.out.println("Acabou as Dicas");
+                }
+            }
+            System.out.println("Tentativa "+(i+1)+":");
+            String filme = ler.nextLine();
+            if(filme.equals(filme_1)){
+                System.out.println("Parabens você acertou o filme do "+jogador_1);
+                break;
+            }else{
+                System.out.println("Você errou!");
+            }
+            i = i + 1;
         }
     }
     public static void Jogador_1(String[] pista_1) {
         Scanner ler = new Scanner(System.in);
         
-        System.out.println(" Informe Suas pistas:");
+        System.out.println("Informe Suas pistas:");
         for(int i = 0; i < 5; i++){
-            System.out.println("Pista "+i+":");
+            System.out.println("Pista "+(i+1)+":");
             pista_1[i] = ler.nextLine();
         }
         
-    }
-    public static void Jogador_2(String[] pista_2) {
-        Scanner ler = new Scanner(System.in);
-        
-        System.out.println("Informe Suas pistas:");
-        for(int i = 0; i < 5; i++){
-            System.out.println("Pista "+i+":");
-            pista_2[i] = ler.nextLine();
-        }
     }
 }
